@@ -19,23 +19,16 @@ eyeIcon.onclick = function(){
 	}
 }
 
-function checkName(str){
-	var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-	return format.test(str) && false;
-}
-
 function loginClick(){	
 	var name = document.getElementById("user-name");
-	if(user.value != '' && checkName(user.value) == true)
-	{
 		login.style.display = 'none';
-		hello.style.display = 'block';
+	hello.style.display = 'block';
+	if(user.value != '')
+	{
 		name.innerHTML = user.value;
 	}
 	else {
-		alert('Tên đăng nhập rỗng hoặc không hợp lệ!');
-		name.focus();
-		name.innerHTML = '';
+		name.innerHTML = 'Tên Đăng Nhập Rỗng';
 
 	}
 }
