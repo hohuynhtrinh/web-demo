@@ -40,10 +40,6 @@ body {
 	color: #ffffff;
 }
 
-.input-box input[type = 'text'] {
-	text-transform: capitalize;
-}
-
 ::placeholder {
 	color: #cccccc;
 }
